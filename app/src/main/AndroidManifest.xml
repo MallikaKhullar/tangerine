@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trial.edupay">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:name="com.trial.edupay.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name="com.trial.edupay.Modules.Login.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.trial.edupay.Utils.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.trial.edupay.Utils.TokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.trial.edupay.Modules.Base.ContainerActivity"
+            android:label="@string/title_activity_container"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trial.edupay.Modules.Profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trial.edupay.Modules.DrawerChildren.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trial.edupay.Modules.Login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trial.edupay.Modules.Payment.FeeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trial.edupay.Modules.Profile.EditProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.trial.edupay.Modules.Profile.AddStudentActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.trial.edupay.Modules.Notices.MessageDisplayActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="20dp"
+    android:elevation="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/dueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opens_light"
+            android:text="Due Nov 4"
+            android:textColor="@color/darkgrey"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/overDue"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/opens_light"
+            android:src="@drawable/warning"
+            android:layout_toRightOf="@+id/dueDate"
+            android:text="VKD Internation"
+            android:textColor="@color/medgrey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/feeAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:fontFamily="@font/opens_bold"
+            android:layout_below="@+id/dueDate"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Rs. 4700"
+            android:textColor="@color/darkorange"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/feeSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans"
+            android:text="Abhishek"
+            android:layout_below="@+id/feeAmount"
+            android:textColor="@color/darkgrey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/feeBody"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/opens_reg"
+            android:layout_below="@+id/feeSubject"
+            android:maxLines="1"
+            android:text="Installment for October some long text here what is "
+            android:textColor="@color/medgrey"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/feeSubject"
+            android:id="@+id/feeCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opens_light"
+            android:text="VKD Internation"
+            android:layout_below="@+id/feeAmount"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/darkgrey"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

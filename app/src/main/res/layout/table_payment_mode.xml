@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" style="@style/subContainer"
+    android:layout_margin="12dp">
+
+    <TableRow
+        style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <TextView
+            style="@style/textContainer.secondary_grey"
+            android:layout_weight="0.5"
+            android:text="Payment Mode"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            style="@style/textContainer.secondary_grey"
+            android:layout_weight="0.5"
+            android:text="Transaction charge"
+            android:textSize="14sp"
+            android:gravity="end" />
+
+    </TableRow>
+
+    <TableRow style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/radioNetBanking"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:text="Net Banking"
+            android:textSize="12sp"
+            android:checked="true"/>
+
+        <TextView
+            android:id="@+id/netBankingFees"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:text="0"
+            android:textSize="12sp"
+            android:gravity="end"/>
+
+    </TableRow>
+
+    <TableRow style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/radioDebitCard"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="Debit Card"/>
+
+        <TextView
+            android:id="@+id/debitCardFees"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:text="0"
+            android:textSize="12sp"
+            android:gravity="end"/>
+
+    </TableRow>
+
+    <TableRow style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/radioCreditCard"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="Credit Card"/>
+
+        <TextView
+            android:id="@+id/creditCardFees"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="0"
+            android:gravity="end"/>
+
+    </TableRow>
+
+    <TableRow style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/radioWallet"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="Wallet"/>
+
+        <TextView
+            android:id="@+id/walletFees"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="0"
+            android:gravity="end"/>
+
+    </TableRow>
+
+    <TableRow style="@style/subContainer"
+        android:layout_margin="@dimen/small_padding">
+
+        <RadioButton
+            android:id="@+id/radioUpi"
+            style="@style/textContainer.primary_grey"
+            android:textSize="12sp"
+            android:layout_weight="0.5"
+            android:text="UPI"/>
+
+        <TextView
+            android:id="@+id/upiFees"
+            style="@style/textContainer.primary_grey"
+            android:layout_weight="0.5"
+            android:textSize="12sp"
+            android:text="0"
+            android:gravity="end"/>
+
+    </TableRow>
+
+</TableLayout>

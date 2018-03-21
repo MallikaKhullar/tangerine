@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid android:color="#01c24d31" />
+            <padding
+                android:bottom="2px"
+                android:left="2px"
+                android:right="2px"
+                android:top="2px" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#02c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+        </shape>
+    </item>
+
+     <item>
+        <shape>
+            <solid android:color="#02c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#03c24d31" />
+            <padding
+                android:bottom="5px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#04c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#05c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#06c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#0c24d317" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#08c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#08c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#09c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#10c24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="1px" />
+
+        </shape>
+    </item>
+    <item>
+
+        <shape>
+            <solid android:color="#0ac24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#0bc24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>    <item>
+        <shape>
+            <solid android:color="#0bc24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#0cc24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#0dc24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>
+    <item>
+
+        <shape>
+            <solid android:color="#0dc24d31" />
+            <padding
+                android:bottom="1px"
+                android:left="1px"
+                android:right="1px"
+                android:top="0px" />
+
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <solid android:color="#fff" />
+        </shape>
+    </item>
+</layer-list>

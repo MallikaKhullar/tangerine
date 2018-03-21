@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/logo"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/opens_bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="45dp"
+            android:text="Login to Edupay"
+            android:textColor="@color/darkgrey" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etPhone"
+            android:layout_width="wrap_content"
+            android:background="@drawable/grey_outline_rectangle"
+            android:padding="5dp"
+            android:fontFamily="@font/opens_reg"
+            android:textColorHint="@color/medgrey"
+            android:maxLength="10"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:ems="10"
+            android:textColor="@color/darkgrey"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Enter Phone Number" />
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:id="@+id/tvNext"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/opens_reg"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/orange"
+            android:onClick="otpSubmit"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:text="Send OTP"
+            android:textColor="@color/white" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/progress"
+            android:layout_marginTop="30dp"
+            android:progress="60"
+            android:indeterminateTint="@color/orange"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            android:max="100"
+            android:padding="3dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

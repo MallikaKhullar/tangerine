@@ -1,0 +1,158 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:background">@drawable/action_bar_gradient</item>
+        <!-- Support library compatibility -->
+        <item name="background">@drawable/action_bar_gradient</item>
+    </style>
+
+
+    <style name="container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="subContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="subContainer.primary_grey">
+        <item name="android:textColor">@color/medgrey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+  <style name="subContainer.orange_textinput">
+        <item name="android:textColor">@color/medgrey</item>
+        <item name="android:textSize">12sp</item>
+       <item name="android:textColorHint">@color/medgrey</item>
+       <item name="colorAccent">@color/orange</item>
+       <item name="colorControlNormal">@color/orange</item>
+       <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+    <style name="subContainer.secondary_grey">
+        <item name="android:textColor">@color/darkgrey</item>
+        <item name="android:textColorHint">@color/medgrey</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="subContainer.primary_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="subContainer.secondary_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="subContainer.LargeButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">@dimen/margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="textContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textContainer.primary_grey">
+        <item name="android:textColor">@color/medgrey</item>
+    </style>
+
+    <style name="textContainer.secondary_grey">
+        <item name="android:textColor">@color/darkgrey</item>
+        <item name="android:textColorHint">@color/medgrey</item>
+    </style>
+
+    <style name="textContainer.primary_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textContainer.secondary_white">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="textContainer.SmallButton">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:paddingBottom">@dimen/padding</item>
+        <item name="android:paddingLeft">@dimen/margin</item>
+        <item name="android:paddingRight">@dimen/margin</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+    <style name="font_awesome_icons_grey">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/lightgrey</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+    </style>
+
+    <style name="font_awesome_icons_white">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="horizontal_divider_grey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/margin</item>
+        <item name="android:layout_marginBottom">@dimen/margin</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lightgrey</item>
+    </style>
+
+    <style name="logo_imageview">
+        <item name="android:width">50dp</item>
+        <item name="android:height">50dp</item>
+        <item name="android:contentDescription">School Logo</item>
+    </style>
+
+
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

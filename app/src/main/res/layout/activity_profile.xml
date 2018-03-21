@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/container">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        style="@style/subContainer"
+        android:layout_marginBottom="@dimen/margin">
+
+        <LinearLayout
+            style="@style/subContainer"
+            android:background="@color/white"
+            android:padding="@dimen/padding"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/opens_light"
+                    android:onClick="editProfile"
+                    android:padding="14dp"
+                    android:text="Edit Profile"
+                    android:textColor="@color/orange" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/opens_light"
+                    android:onClick="addStudent"
+                    android:padding="14dp"
+                    android:text="Add Student"
+                    android:textColor="@color/orange" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/userPicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:layout_margin="@dimen/margin"
+                android:text="Personal Info"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:paddingBottom="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:background="@color/lightestgrey"
+                android:textAllCaps="true"
+                android:textColor="@color/orange" />
+
+
+            <TextView
+                    style="@style/subContainer.secondary_grey"
+                    android:text="Name"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:textSize="12sp"
+                    style="@style/subContainer.primary_grey"
+                    android:text="" />
+
+            <View style="@style/horizontal_divider_grey" />
+
+
+            <TextView
+                    style="@style/subContainer.secondary_grey"
+                    android:text="Phone No."
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/userNumber"
+                    style="@style/subContainer.primary_grey"
+                    android:textSize="12sp"
+                    android:text="" />
+
+                <View style="@style/horizontal_divider_grey" />
+
+                <TextView
+                    style="@style/subContainer.secondary_grey"
+                    android:text="Email"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:textSize="12sp"
+                    style="@style/subContainer.primary_grey"
+                    android:text="" />
+
+                <View style="@style/horizontal_divider_grey" />
+
+                <TextView
+                    style="@style/subContainer.secondary_grey"
+                    android:text="Occupation"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/userOccupation"
+                    android:textSize="12sp"
+                    style="@style/subContainer.primary_grey"
+                    android:text="" />
+
+                <View style="@style/horizontal_divider_grey" />
+
+                <TextView
+                    style="@style/subContainer.secondary_grey"
+                    android:text="Address"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/userAddress"
+                    style="@style/subContainer.primary_grey"
+                    android:text="" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin" />
+
+            </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

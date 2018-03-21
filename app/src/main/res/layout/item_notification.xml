@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/schoolLogo"
+        android:layout_width="40dp"
+        android:src="@drawable/uni_logo"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true" />
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/schoolLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/schoolName"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkgrey"
+            android:text="hello"
+            android:textSize="14sp"
+            android:fontFamily="@font/opens_reg"
+            />
+
+        <TextView
+            android:id="@+id/messageBody"
+            style="@style/textContainer.secondary_grey"
+            android:layout_marginRight="@dimen/padding"
+            android:textSize="14sp"
+            android:textColor="@color/darkgrey"
+            android:fontFamily="@font/opens_bold"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="hello"
+            />
+
+        <TextView
+            android:id="@+id/msgCategory"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/darkgrey"
+            android:text="hello"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:fontFamily="@font/opens_reg"
+            />
+
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opens_light"
+            android:text="hello"
+            android:textSize="12sp"
+            android:textColor="@color/meddarkgrey"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="2px"
+        android:background="@color/lightergrey"/>
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/opens_bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="45dp"
+        android:text="Add Your Ward"
+        android:textColor="@color/darkgrey" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/schoolName"
+        style="@style/subContainer.secondary_grey"
+        android:hint="Enter school name"
+        android:textColorHint="@color/medgrey"
+        android:textSize="14sp"
+        android:background="@null"
+        android:paddingBottom="10dp"
+        android:textColor="@color/darkgrey"
+        android:layout_margin="@dimen/margin"/>
+
+
+    <EditText
+        android:id="@+id/admissionNo"
+        android:textSize="14sp"
+        style="@style/subContainer"
+        android:hint="Enter admission Id"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_margin="@dimen/margin"
+        android:background="@null"
+        android:textColorHint="@color/medgrey"
+        android:textColor="@color/darkgrey" />
+
+
+    <TextView
+        android:id="@+id/searchStudent"
+        style="@style/textContainer.primary_grey"
+        android:textSize="14sp"
+        android:layout_margin="@dimen/margin"
+        android:text="Search New Student"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/progress"
+        android:layout_marginTop="30dp"
+        android:progress="60"
+        android:indeterminateTint="@color/orange"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:max="100"
+        android:padding="3dp" />
+
+
+    <View
+        android:id="@+id/studentDivider"
+        android:layout_margin="@dimen/margin"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:visibility="invisible"
+        android:background="@color/lightgrey"></View>
+
+
+    <TextView
+        android:id="@+id/studentName"
+        android:padding="@dimen/padding"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="20sp"
+        android:layout_margin="@dimen/margin"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/addStudent"
+        style="@style/textContainer.primary_grey"
+        android:text="Add Student"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/padding"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

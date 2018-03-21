@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    style="@style/container">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/container"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout style="@style/subContainer">
+
+            <RelativeLayout
+                android:id="@+id/imageLayout"
+                style="@style/textContainer">
+
+                <ImageView
+                    android:id="@+id/schoolLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/profileText"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/margin"
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_marginTop="@dimen/margin"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/schoolName"
+                style="@style/textContainer.primary_grey"
+                android:layout_margin="@dimen/margin"
+                android:layout_toEndOf="@+id/imageLayout"
+                android:layout_toRightOf="@+id/imageLayout"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/messageTime"
+                style="@style/textContainer.secondary_grey"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/schoolName"
+                android:layout_marginLeft="@dimen/margin"
+                android:layout_marginRight="@dimen/margin"
+                android:text="" />
+
+            <View
+                android:id="@+id/divider"
+                style="@style/horizontal_divider_grey"
+                android:layout_below="@id/messageTime"
+                android:layout_marginTop="@dimen/margin" />
+
+            <TextView
+                android:id="@+id/messageBody"
+                style="@style/subContainer"
+                android:layout_below="@id/divider"
+                android:layout_margin="@dimen/margin"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
